@@ -1,0 +1,70 @@
+
+
+.carousel-inner {
+  height: 50rem;
+}
+.navbar .navbar-brand
+{
+font-family: 'Inria Serif', serif;  font-size: 3rem;
+padding: 2px 5px;
+transition-duration: 0.3s;
+}
+.navbar .navbar-brand:hover
+{
+background-color: #F0A500;
+border-radius: 25%;
+
+}
+.navbar .nav-link
+{
+  font-size: 1.2rem;
+  color: white !important;
+  /* transition-duration: 0.2s; */
+}
+.navbar .nav-link:hover
+{
+  background-color: #F0A500;
+  border-radius: 15%;
+  transition-duration: 0.2s;
+}
+
+.navbar
+{
+  padding: 1% 10% 0;
+}
+#header {
+  text-align:center;
+  padding-top: 12%;
+  color: white;
+
+}
+
+.carousel {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.tinted-image {
+  filter: brightness(30%);
+
+}
+
+h1
+{
+  font-family: 'Aligatai', sans-serif;
+  font-size: 900%;
+}
+.carousel-inner{
+/*just incase the flash (style above) comes back*/
+   background: #000;
+}
+.Midd
+{
+  position: relative;
+
+}
