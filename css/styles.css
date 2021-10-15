@@ -3,7 +3,8 @@
 }
 .navbar .navbar-brand
 {
-font-family: 'Inria Serif', serif;  font-size: 3rem;
+font-family: 'Inria Serif', serif;
+font-size: 3rem;
 padding: 2px 5px;
 transition-duration: 0.3s;
 }
@@ -39,7 +40,10 @@ border-radius: 25%;
   color: white;
 
 }
-
+.collapse , .collapsing
+{
+  text-align: right;
+}
 .carousel {
   position: relative;
   z-index: -1;
@@ -51,7 +55,7 @@ border-radius: 25%;
 }
 
 .tinted-image {
-  filter: brightness(60%);
+  filter: brightness(35%);
 }
 
 h1
@@ -64,30 +68,43 @@ h1
    background: #000;
 
 }
-@media screen and (max-width:1115px) and (min-width:910px) {
+@media screen and (max-width:1115px) and (min-width:910px) {  //1
   .carousel-inner{
   /*just incase the flash (style above) comes back*/
   max-height:650px;
   }
 }
-@media screen and (max-width:910px)  and (min-width:685px){
+@media screen and (max-width:910px)  and (min-width:685px){ //2
   .carousel-inner{
   /*just incase the flash (style above) comes back*/
   max-height:600px;
   }
+  .n
   h1
   {
     font-size: 650%;
   }
+  .intro h3
+  {
+    font-size: 150%;
+  }
 }
-@media screen and (max-width:807px)  and (min-width:699px){
+@media screen and (max-width:807px)  and (min-width:699px){ //3
   .carousel-inner{
   /*just incase the flash (style above) comes back*/
   max-height:500px;
   }
-  h1
+  .intro h1
   {
     font-size: 550%;
+  }
+  .intro h3
+  {
+    font-size: 125%;
+  }
+  .navbar .navbar-brand
+  {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width:699px)  and (min-width:540px){
@@ -99,6 +116,14 @@ h1
   {
     font-size: 450%;
   }
+  .intro h3
+  {
+    font-size: 100%;
+  }
+  .navbar .navbar-brand
+  {
+    font-size: 1.7rem;
+  }
 }
 @media screen and (max-width:540px)  and (min-width:300px){
   .carousel-inner{
@@ -109,6 +134,14 @@ h1
   {
     font-size: 350%;
   }
+  .intro h3
+  {
+    font-size: 100%;
+  }
+  .navbar .navbar-brand
+  {
+    font-size: 1.4rem;
+  }
 }
 .intro
 {
@@ -116,11 +149,30 @@ h1
   width:100%;
   margin: 16% auto 0;
   padding: 2% 0;
-  background-color: rgba(0,0,0,0.55); /* Tint color */
-  background-blend-mode: multiply;
+  /* background-color: rgba(0,0,0,0.55);
+  background-blend-mode: multiply; */
 }
-.intro h3
+/* .intro h3
 {
   font-size: 1.5rem;
   color: #E0DEDE;
+} */
+#Midd{
+  padding: 6%;
+  text-align: center;
+
+
+}
+#Midd h3
+{
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+}
+.midimg
+{
+  width: 30%;
+}
+.midico
+{
+  padding:0 1.5rem;
 }
