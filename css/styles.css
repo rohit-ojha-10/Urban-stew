@@ -63,18 +63,18 @@ h1
   font-family: 'Aligatai','Grechen Fuemen', sans-serif;
   font-size: 900%;
 }
-.carousel-inner{
+ .carousel-inner {
 /*just incase the flash (style above) comes back*/
    background: #000;
 
 }
-@media screen and (max-width:1115px) and (min-width:910px) {  //1
+@media screen and (max-width:1115px) and (min-width:910px) {
   .carousel-inner{
   /*just incase the flash (style above) comes back*/
   max-height:650px;
   }
 }
-@media screen and (max-width:910px)  and (min-width:685px){ //2
+@media screen and (max-width:910px)  and (min-width:685px){
   .carousel-inner{
   /*just incase the flash (style above) comes back*/
   max-height:600px;
@@ -89,7 +89,7 @@ h1
     font-size: 150%;
   }
 }
-@media screen and (max-width:807px)  and (min-width:699px){ //3
+@media screen and (max-width:807px)  and (min-width:699px){
   .carousel-inner{
   /*just incase the flash (style above) comes back*/
   max-height:500px;
@@ -158,7 +158,7 @@ h1
   color: #E0DEDE;
 } */
 #Midd{
-  padding: 6%;
+  padding:10% 6%;
   text-align: center;
 
 
@@ -175,4 +175,26 @@ h1
 .midico
 {
   padding:0 1.5rem;
+}
+.parent
+{
+  margin: 5% 0%;
+  height: 500px;;
+  display: flex;
+  flex-shrink: 8;
+  justify-content: space-around;
+
+}
+.child
+{
+  background-image:url("https://d23ynomj6u3eig.cloudfront.net/sites/default/files/2020-01/itpl.jpg");
+  height: 400px;
+  width: 230px;
+  border:2px solid red;
+  border-radius: 10%;
+
+}
+#flexing .carousel-inner
+{
+  max-height: 550px;
 }
