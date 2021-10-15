@@ -31,6 +31,7 @@ border-radius: 25%;
   padding: 1% 10% 0;
   width: 100%;
   position: absolute;
+  z-index: 1;
 }
 #header {
   position: relative;
@@ -50,8 +51,7 @@ border-radius: 25%;
 }
 
 .tinted-image {
-  filter: brightness(30%);
-
+  filter: brightness(40%);
 }
 
 h1
@@ -114,5 +114,13 @@ h1
 {
   position: absolute;
   width:100%;
-  margin: 17% auto 0;
+  margin: 16% auto 0;
+  padding: 2% 0;
+  background-color: rgba(0,0,0,0.55); /* Tint color */
+  background-blend-mode: multiply;
+}
+.intro h3
+{
+  font-size: 1.5rem;
+  color: #E0DEDE;
 }
