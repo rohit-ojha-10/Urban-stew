@@ -1,55 +1,48 @@
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .carousel-inner {
   height: 50rem;
 }
-.navbar .navbar-brand
-{
-font-family: 'Inria Serif', serif;
-font-size: 3rem;
-padding: 2px 5px;
-transition-duration: 0.3s;
-}
-.navbar .navbar-brand:hover
-{
-background-color: #F0A500;
-border-radius: 25%;
 
+.navbar .navbar-brand {
+  font-family: 'Inria Serif', serif;
+  font-size: 3rem;
+  padding: 2px 5px;
+  transition-duration: 0.3s;
 }
-.navbar .nav-link
-{
+
+.navbar .navbar-brand:hover {
+  background-color: #F0A500;
+  border-radius: 25%;
+}
+
+.navbar .nav-link {
   font-size: 1.2rem;
   color: white !important;
   /* transition-duration: 0.2s; */
 }
-.navbar .nav-link:hover
-{
+
+.navbar .nav-link:hover {
   background-color: #F0A500;
   border-radius: 15%;
   transition-duration: 0.2s;
 }
 
-.navbar
-{
+.navbar {
   padding: 1% 10% 0;
   width: 100%;
   position: absolute;
   z-index: 1;
 }
+
 #header {
   position: relative;
-  text-align:center;
+  text-align: center;
   color: white;
-
 }
-.collapse , .collapsing
-{
+
+.collapse, .collapsing {
   text-align: right;
 }
+
 .carousel {
   position: relative;
   z-index: -1;
@@ -64,150 +57,220 @@ border-radius: 25%;
   filter: brightness(35%);
 }
 
-h1
-{
-  font-family: 'Aligatai','Grechen Fuemen', sans-serif;
+h1 {
+  font-family: 'Aligatai', 'Grechen Fuemen', sans-serif;
   font-size: 900%;
 }
-.carousel-inner{
-/*just incase the flash (style above) comes back*/
-   background: #000;
 
+.carousel-inner {
+  /*just incase the flash (style above) comes back*/
+  background: #000;
 }
+
 @media screen and (max-width:1115px) and (min-width:910px) {
-  .carousel-inner{
-  /*just incase the flash (style above) comes back*/
-  max-height:650px;
+  .carousel-inner {
+    /*just incase the flash (style above) comes back*/
+    max-height: 650px;
   }
 }
-@media screen and (max-width:910px)  and (min-width:685px){
-  .carousel-inner{
-  /*just incase the flash (style above) comes back*/
-  max-height:600px;
+
+@media screen and (max-width:910px) and (min-width:685px) {
+  .carousel-inner {
+    /*just incase the flash (style above) comes back*/
+    max-height: 600px;
   }
-  .n
-  h1
-  {
+
+  .n h1 {
     font-size: 650%;
   }
-  .intro h3
-  {
+
+  .intro h3 {
     font-size: 150%;
   }
 }
-@media screen and (max-width:807px)  and (min-width:699px){
-  .carousel-inner{
-  /*just incase the flash (style above) comes back*/
-  max-height:500px;
+
+@media screen and (max-width:807px) and (min-width:699px) {
+  .carousel-inner {
+    /*just incase the flash (style above) comes back*/
+    max-height: 500px;
   }
-  .intro h1
-  {
+
+  .intro h1 {
     font-size: 550%;
   }
-  .intro h3
-  {
+
+  .intro h3 {
     font-size: 125%;
   }
-  .navbar .navbar-brand
-  {
+
+  .navbar .navbar-brand {
     font-size: 2rem;
   }
 }
-@media screen and (max-width:699px)  and (min-width:540px){
-  .carousel-inner{
-  /*just incase the flash (style above) comes back*/
-  max-height:400px;
+
+@media screen and (max-width:699px) and (min-width:540px) {
+  .carousel-inner {
+    /*just incase the flash (style above) comes back*/
+    max-height: 400px;
   }
-  h1
-  {
+
+  h1 {
     font-size: 450%;
   }
-  .intro h3
-  {
+
+  .intro h3 {
     font-size: 100%;
   }
-  .navbar .navbar-brand
-  {
+
+  .navbar .navbar-brand {
     font-size: 1.7rem;
   }
 }
-@media screen and (max-width:540px)  and (min-width:300px){
-  .carousel-inner{
-  /*just incase the flash (style above) comes back*/
-  max-height:300px;
+
+@media screen and (max-width:540px) and (min-width:300px) {
+  .carousel-inner {
+    /*just incase the flash (style above) comes back*/
+    max-height: 300px;
   }
-  h1
-  {
+
+  h1 {
     font-size: 350%;
   }
-  .intro h3
-  {
+
+  .intro h3 {
     font-size: 100%;
   }
-  .navbar .navbar-brand
-  {
+
+  .navbar .navbar-brand {
     font-size: 1.4rem;
   }
 }
-.intro
-{
+
+
+.intro {
   position: absolute;
-  width:100%;
+  width: 100%;
   margin: 16% auto 0;
   padding: 2% 0;
   /* background-color: rgba(0,0,0,0.55);
   background-blend-mode: multiply; */
 }
+
 /* .intro h3
 {
   font-size: 1.5rem;
   color: #E0DEDE;
 } */
-#Midd{
+#Midd {
   padding: 6%;
   text-align: center;
-
-
 }
-#Midd h3
-{
+
+#Midd h3 {
   font-family: 'Lato', sans-serif;
   font-weight: bolder;
 }
-.midimg
-{
+
+.midimg {
   width: 30%;
 }
-.midico
-{
-  padding:0 1.5rem;
+
+.midico {
+  padding: 0 1.5rem;
 }
-.item
-{
-  /* width: 70% !important; */
+
+.item img {
   position: relative;
-  color:white;
-  height:500px;
-  /* background-image:url("https://image.shutterstock.com/image-photo/assorted-indian-recipes-food-various-260nw-649541308.jpg"); */
-
-}
-.item img
-{
-
+  filter: brightness(60%);
   border-radius: 10%;
-  filter: brightness(50%);
-  position: absolute;
-  z-index: -1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+
 }
+.item img:hover
+{
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.7);
+
+}
+.mid2 {
+  padding: 0 10%;
+  background-image: linear-gradient(white,#F78812);
+  background-size: cover;
+  text-align: center;
+}
+
+.item {
+  border-radius: 10%;
+  transition: 0.5s;
+  padding: 50px 0;
+}
+
+.item:hover {
+  transform: translateY(-8px);
+}
+
 .item h3
 {
+  font-size: 1.5rem;
+  font-weight: bold;
+text-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+}
+.item .card-text {
 
-  margin:0 35%;
-  padding-top: 12%;
+  position: absolute;
+  bottom: 60%;
+  width: 100%;
+  color: white;
 }
 
+.item p {
 
-#mid2
+  position: absolute;
+  padding: 4% 5% 0%;
+  top: 30px;
+  color: white;
+}
+@media screen and (max-width:640px) and (min-width:550px){
+  .item h3
+  {
+    font-size:1.2rem;
+  }
+  .item p{
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width:550px) and (min-width:480px){
+  .item h3
+  {
+    font-size:1.1rem;
+  }
+  .item p{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width:480px) and (min-width:420px) {
+  .item h3
+  {
+    font-size:0.9rem;
+  }
+  .item p{
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width:420px) and (min-width:300px) {
+  .item h3
+  {
+    font-size:0.7rem;
+  }
+  .item p{
+    font-size: 0.6rem;
+  }
+}
+.read-more a
 {
-  padding: 0% 7%;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  width: 20%;
 }
