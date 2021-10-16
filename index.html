@@ -82,17 +82,17 @@
   <section id="Midd">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-4 midico">
+        <div class="col-md-4 midico">
           <img class="midimg" src="images/cook-book.png" alt="">
           <h3>Throw your cookbooks away.</h3>
           <p>Every recipe on your fingertips.</p>
         </div>
-        <div class="col-4 midico">
+        <div class="col-md-4 midico">
           <h3>Delicious recipies at your service.</h3>
           <p>By one of the best chefs in the world.</p>
           <img class="midimg" src="images/food-delivery.png" alt="">
         </div>
-        <div class="col-4 midico">
+        <div class="col-md-4 midico">
           <img class="midimg" src="images/indian.png" alt="">
           <h3>Recipies from around the world.</h3>
           <p>Make anything from anywhere.</p>
@@ -100,45 +100,68 @@
       </div>
     </div>
   </section>
-  <!-- ****************************mid2****************** -->
-  <section id="mid2">
+  <section class="mid2">
     <div class="owl-carousel owl-theme">
       <div class="item">
-        <a href=""><img src="images/biryani.jpeg" alt=""></a>
-        <h3>Tandoori Chicken</h3>
-      </div>
-      <div class="item">
-        <a href=""><img src="images/butter-chicken.jpeg" alt=""></a>
-      </div>
-      <div class="item">
-        <a href=""><img src="images/samosa.jpg" alt=""></a>
+        <img src="images/daltadka.jpg" alt="">
+        <div class="card-text">
+          <div class="card-text">
+            <h3>Dal Tadka</h3>
+            <p>Dal Tadka is one of the most popular lentil dish served in Indian restaurants. Basically, dal tadka is cooked lentils<span class="read-more"><a href="">...</a></span></p>
+          </div>
         </div>
-      <div class="item">
-        <a href=""><img src="images/daltadka.jpg" alt=""></a>
       </div>
       <div class="item">
-        <!-- <a href=""><img src="https://images.pexels.com/photos/691114/pexels-photo-691114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></a> -->
+        <img src="images/shorshe.jpg" alt="">
+        <div class="card-text">
+          <h3>Shorshe maach</h3>
+          <p>Used whole as an aromatic in almost all stir-fries and curries in the Western and Southern parts of the subcontinente<span class="read-more"><a href="">...</a></span></p>
+        </div>
       </div>
-      <div class="item ooo">
-        <!-- <a href=""><img src="https://images.pexels.com/photos/1656666/pexels-photo-1656666.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></a> -->
+      <div class="item">
+        <img src="images/dalmakhni.jpg" alt="">
+        <div class="card-text">
+          <h3>Daal Makhni</h3>
+          <p>Dal makhani is a classic Indian dish made with whole urad dal, rajma, butter and spices<span class="read-more"><a href="">...</a></span></p>
+        </div>
       </div>
-
+      <div class="item">
+        <img src="images/kosha.jpg" alt="">
+        <div class="card-text">
+          <h3>Kosha Maangsho</h3>
+          <p>Kosha Mangsho or Mutton Kosha is a very popular traditional curry in Bengal, and its literal meaning is<span class="read-more"><a href="">...</a></span></p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/samosa.jpg" alt="">
+        <div class="card-text">
+          <h3>Samosa</h3>
+          <p>A samosa (/səˈmoʊsə/) is a South Asian fried or baked pastry with a savory filling like spiced potatoes, onions, peas<span class="read-more"><a href="">...</a></span></p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/butter-chicken.jpeg" alt="">
+        <div class="card-text">
+          <h3>Butter Chicken</h3>
+          <p>Butter chicken or murgh makhani is a curry of chicken in a spiced tomato, butter and cream sauce<span class="read-more"><a href="">...</a></span></p>
+        </div>
+      </div>
     </div>
   </section>
   <script type="text/javascript">
     $('.owl-carousel').owlCarousel({
       loop: true,
-      margin: 20,
+      margin: 60,
       nav: true,
       responsive: {
         0: {
           items: 2
         },
-        600: {
-          items: 3
-        },
         1000: {
           items: 3
+        },
+        1300: {
+          items: 4
         }
       }
     })
