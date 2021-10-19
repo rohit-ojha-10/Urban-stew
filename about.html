@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body
+    {
+      background-image:linear-gradient(#6D8299,#152D35) ;
+    }
+    .mySlides {
+      display: none;
+    }
+    .Cimage
+    {
+      filter: brightness(85%);
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+      font-size: 40px;
+      padding: 8px 12px;
+      position: relative;
+      bottom: 225px;
+      width: 100%;
+      text-align: center;
+      font family: Helvetica;
+      background-color: rgba(0,0,0,0.6);
+
+    }
+
+    .subtext {
+      font-size: 20px;
+      padding: 8px 12px;
+      position: relative;
+      bottom: 200px;
+      width: 100%;
+      text-align: center;
+      font family: sans-serif;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+    .text,.subtext
+    {
+      color:white;
+    }
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img class="Cimage" src="images2\biryani.jpg" style="width:100%;height:20rem;">
+
+      <div class="text">About Us</div>
+      <div class="subtext">Urban Stew aims to provide people with restaurant like food recipes</div>
+      <div class="subtext ">We provide with a taste that is too good to waste</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="Cimage" src="images2\butterchicken.jpg" style="width:100%;height:20rem;">
+      <div class="text">About Us</div>
+      <div class="subtext">Urban Stew aims to provide people with restaurant like food recipes</div>
+      <div class="subtext ">We provide with a taste that is too good to waste</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="Cimage" src="images2\idlisambhar.jpg" style="width:100%;height:20rem;">
+      <div class="text">About Us</div>
+      <div class="subtext">Urban Stew aims to provide people with restaurant like food recipes</div>
+      <div class="subtext ">We provide with a taste that is too good to waste</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="Cimage" src="images2\pizza.jpg" style="width:100%;height:20rem;">
+      <div class="text">About Us</div>
+      <div class="subtext">Urban Stew aims to provide people with restaurant like food recipes</div>
+      <div class="subtext ">We provide with a taste that is too good to waste</div>
+    </div>
+
+  </div>
+  <br>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 7000); // Change images2 every 2 seconds
+    }
+  </script>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+      background-color: white;
+
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: red;
+    }
+
+    .button {
+      border: none;
+      display: inline-block;
+      padding: 10px;
+      color: white;
+      background-color: #F0813E;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #E53C16;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 style="text-align:center;color:white">Our Team</h1>
+  <div class="row">
+    <div class="column">
+      <div class="card" style="height:35rem;">
+        <img src="images2\rishi.jpeg" alt="Rishikesh" style="width:100%;height:20rem;">
+        <div class="container">
+          <h2>Rishikesh Sahoo</h2>
+          <p class="title">Developer</p>
+          <p>Web developer || Blockchain developer || problem solver</p>
+          <p>rishi@gmail.com</p>
+          <p><a href="https://www.linkedin.com/in/rishikesh-sahoo-678a61195/" class="button">Contact</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card" style="height:35rem;">
+        <img src="images2\rituja.jpeg" style="width:100%;height:20rem;">
+        <div class="container">
+          <h2>Rituja Patil</h2>
+          <p class="title">Developer</p>
+          <p>Web developer || Java developer || Css animation geneuis</p>
+          <p>rituja.com</p>
+          <p><a href="https://www.linkedin.com/in/rituja-patil-b5b79b210/" class="button">Contact</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card" style="height:35rem;">
+        <img src="images2\rohit.png" alt="Rohit" style="width:100%;height:20rem;">
+        <div class="container">
+          <h2>Rohit</h2>
+          <p class="title">Developer</p>
+          <p>Web developer || Rust developer || C++ geneuis</p>
+          <p>rohit@gmail.com</p>
+          <p><a href="https://www.linkedin.com/in/rohit-ojha-992998203/" class="button">Contact</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
